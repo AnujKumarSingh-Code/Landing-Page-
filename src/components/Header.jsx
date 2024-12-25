@@ -74,8 +74,8 @@ const Header = () => {
             />
           </div>
 
-          <div className="mt-10 align-baseline text-left ml-[70]">
-            <p className="text-3xl font-semibold inline-flex items-end">
+          <div className="mt-10  ml-[72px] align-baseline text-left">
+            <p className="text-3xl font-semibold inline-flex">
               Expand Your Reach, Inspire More
             </p>
             <p className="text-3xl font-semibold">
@@ -86,7 +86,7 @@ const Header = () => {
             </p>
           </div>
 
-          <div className="text-2xl text-left ml-[70] mt-10">
+          <div className="text-2xl  ml-[72px] text-left mt-10">
             <p>A global platform for coaches to connect, inspire, and change lives.</p>
           </div>
 
