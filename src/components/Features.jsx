@@ -36,7 +36,7 @@ const FeatureCard = ({ title, description, icon }) => {
         <Image
           src={icon}
           alt={title}
-          className="w-[80px] h-[80px] sm:w-[130px] sm:h-[130px] object-contain flex justify-center"
+          className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] object-contain flex justify-center"
         />
       </div>
       <h3 className="text-neutral-300 text-[20px] sm:text-[29px] font-lato w-[260px] font-bold flex justify-center mt-20 sm:mt-0">
