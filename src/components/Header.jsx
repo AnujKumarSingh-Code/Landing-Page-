@@ -26,7 +26,7 @@ const TypewriterEffectSmooth = ({ words, className, cursorClassName }) => {
             {word.text.map((char, index) => (
               <span
                 key={`char-${index}`}
-                className={`dark:text-neutral-100 font-lato text-black ${word.className}`}
+                className={`dark:text-neutral-100 font-lato text-neutral-900 ${word.className}`}
               >
                 {char}
               </span>
@@ -46,7 +46,7 @@ const TypewriterEffectSmooth = ({ words, className, cursorClassName }) => {
         transition={{ duration: 2, ease: "linear", delay: 0.5 }}
       >
         <div
-          className="text-6xl font-bold italic"
+          className="text-5xl font-bold italic"
           style={{ whiteSpace: "nowrap" }}
         >
           {renderWords()} {" "}
@@ -65,9 +65,9 @@ const TypewriterEffectSmooth = ({ words, className, cursorClassName }) => {
 const Header = () => {
   return (
     <header className="text-center bg-neutral-900 text-neutral-100 py-10 font-lato">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-[550]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-[400]">
         <div className="w-[750px]">
-          <div className="inline-flex items-center gap-3 ml-[40] mt-40">
+          <div className="inline-flex items-center gap-3 ml-[-50] mt-40">
             <Image src={smile} alt="Smile Icon" />
             <TypewriterEffectSmooth
               words={[{ text: "Hey, Awesome Coach", className: "" }]}
@@ -75,10 +75,10 @@ const Header = () => {
           </div>
 
           <div className="mt-10 align-baseline text-left ml-[70]">
-            <p className="text-4xl font-semibold inline-flex items-end">
+            <p className="text-3xl font-semibold inline-flex items-end">
               Expand Your Reach, Inspire More
             </p>
-            <p className="text-4xl font-semibold">
+            <p className="text-3xl font-semibold">
               Lives{" "}
               <span className="text-gradient bg-linear-primary-500 text-transparent bg-clip-text">
                 Join FitnEarnPal Today!
@@ -90,7 +90,7 @@ const Header = () => {
             <p>A global platform for coaches to connect, inspire, and change lives.</p>
           </div>
 
-          <div className="ml-[70] mt-10 grid grid-cols-2">
+          <div className="ml-[72px] mt-10 grid grid-cols-2">
             <button className="flex items-center w-52 px-5 py-2 bg-linear-primary-500 text-white rounded-lg shadow-lg hover:opacity-90">
               <FaApple className="w-10 h-10 mr-2" />
               <div className="text-left">
@@ -99,7 +99,7 @@ const Header = () => {
               </div>
             </button>
 
-            <button className="flex items-center ml-[-50] w-52 px-5 py-2 bg-linear-primary-500 text-white rounded-lg shadow-lg hover:opacity-90">
+            <button className="flex items-center ml-[-70] w-52 px-5 py-2 bg-linear-primary-500 text-white rounded-lg shadow-lg hover:opacity-90">
               <FaGooglePlay className="w-10 h-10 mr-3" />
               <div className="text-left">
                 <p className="text-xs">Get it on</p>

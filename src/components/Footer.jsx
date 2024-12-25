@@ -7,7 +7,7 @@ export default function Footer() {
 
     return (
         <footer className=" text-neutral-300 font-lato bg-[#2d1a17] pl-[72px] pr-[72px]">
-            <div className="pt-[25.35px] pl-[72px] pr-[72px] grid grid-cols-1 md:grid-cols-4 gap-60">
+            <div className="pt-[25.35px]  grid grid-cols-1 md:grid-cols-4 gap-60">
 
                 <div className="w-[285px]">
                     <div className="flex items-center mb-4">
@@ -98,7 +98,7 @@ export default function Footer() {
                 </div>
 
                 
-                <div>
+                <div className="pr-[72px]">
                     <h3 className="text-lg font-bold mb-4">Download Now</h3>
                     <div className="space-y-4">
                         <button

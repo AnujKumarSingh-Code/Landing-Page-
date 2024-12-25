@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const HeroSection = () => {
   return (
-    <section className="bg-neutral-900 text-neutral-100 font-lato  p-10 text-center ">
+    <section className="flex items-center justify-center bg-neutral-900 text-neutral-100 font-lato  p-10 text-center ">
       <h1 className="text-6xl font-semibold mb-4 font-lato mt-14">
         Become <span className="text-6xl font-bold text-gradient bg-gradient-to-r from-pink-500 via-red-500 to-orange-500 text-transparent bg-clip-text">Coach</span> Today
       </h1>
