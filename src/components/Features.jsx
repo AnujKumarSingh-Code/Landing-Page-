@@ -30,7 +30,7 @@ const features = [
 
 const FeatureCard = ({ title, description, icon }) => {
   return (
-    <div className="relative flex flex-col justify-center items-center font-lato bg-[#262626] text-neutral-100 p-6 rounded-[16px] w-full sm:w-[348px] h-[320px] ">
+    <div className="relative flex flex-col justify-center items-center font-lato bg-[#262626] text-neutral-100 p-6 rounded-[16px]  w-[300px] h-[300px] ">
       {/* Circular Image Container */}
       <div className="absolute -top-10 flex items-center justify-center">
         <Image
