@@ -9,7 +9,7 @@ const Navbar = () => {
   // Check the scroll position to change background color on scroll
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 80) {
         setBgColor("transparent"); // Change to transparent after scrolling 500px
       } else {
         setBgColor("bg-neutral-800"); // Stay black on top

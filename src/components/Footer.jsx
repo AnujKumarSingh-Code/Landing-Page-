@@ -7,7 +7,7 @@ export default function Footer() {
 
     return (
         <footer className=" text-neutral-300 font-lato bg-[#2d1a17] pl-[72px] pr-[72px]">
-            <div className="pt-[25.35px]  grid grid-cols-1 md:grid-cols-4 gap-60">
+            <div className="pt-[25.35px]  grid grid-cols-1 md:grid-cols-4 gap-[170]">
 
                 <div className="w-[285px]">
                     <div className="flex items-center mb-4">
@@ -98,12 +98,12 @@ export default function Footer() {
                 </div>
 
                 
-                <div className="pr-[72px]">
+                <div>
                     <h3 className="text-lg font-bold mb-4">Download Now</h3>
-                    <div className="space-y-4">
+                    <div className=" space-y-4 pr-[72px]">
                         <button
                             href="/appleStore"
-                            className="flex items-center w-52 px-5 py-2 bg-linear-primary-500 text-white rounded-lg shadow-lg hover:opacity-90   text-center "
+                            className=" flex items-center w-52 px-5 py-2 bg-linear-primary-500 text-white rounded-lg shadow-lg hover:opacity-90   text-center "
                         >
                             <FaApple className="w-10 h-10 mr-2" />
                             <div className="text-left">
@@ -127,12 +127,12 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className="pl-[72px] pr-[72px] pt-[27px]">
-                <hr className="pl-[72px] pr-[72px] border-gray-600 " />
+            <div className=" pt-[27px]">
+                <hr className="  border-gray-600 " />
             </div>
             
 
-            <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 pt-[27px]  pl-[72px] pr-[72px] pb-[25.35px] ">
+            <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 pt-[27px] pb-[25.35px] ">
                 <p>© Copyright 2024, All Rights Reserved.</p>
                 <p>
                     Made with ❤️ in India 
