@@ -65,7 +65,7 @@ export default function Join() {
 
         {/* Typing animation, starts only when in view */}
         <div
-          className="mt-12   font-lato text-[32px] text-neutral-300 w-[1031px] leading-[38.4px]"
+          className="mt-12   font-lato text-[32px] text-neutral-300 w-[1040px] leading-[38.4px]"
           style={{ height: "240px" }} // Fixed height for alignment
         >
           {startAnimation && <TypewriterAnimation text={fullText} />}
