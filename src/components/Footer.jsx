@@ -5,10 +5,11 @@ import { FaEnvelope, FaFacebook, FaGithub, FaInstagram, FaTwitter, FaApple, FaGo
 
 export default function Footer() {
     return (
-        <footer className="text-neutral-300 font-lato bg-[#2d1a17] px-6 sm:px-12 md:px-18 lg:px-24 xl:px-36">
-            <div className="pt-6 grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 lg:gap-16">
+        <footer className="bg-[#2d1a17] text-neutral-300 font-lato pr-[72px] pl-[72px]">
+            {/* Main Content */}
+            <div className="py-8 grid grid-cols-1 md:grid-cols-4 gap-12">
                 {/* Company Info */}
-                <div className="w-full">
+                <div>
                     <div className="flex items-center mb-4">
                         <Image src={fit} alt="FitnEarnPal Logo" className="h-8 w-9" />
                         <h2 className="text-2xl font-bold text-gradient bg-gradient-to-r from-pink-500 via-red-500 to-orange-500 text-transparent bg-clip-text ml-2">
@@ -43,7 +44,7 @@ export default function Footer() {
                 </div>
 
                 {/* Useful Links */}
-                <div className="w-full">
+                <div className="ml-24">
                     <h3 className="text-lg font-bold mb-4">Useful Links</h3>
                     <ul className="space-y-2">
                         <li>
@@ -70,7 +71,7 @@ export default function Footer() {
                 </div>
 
                 {/* Policies */}
-                <div className="w-full">
+                <div className="ml-24">
                     <h3 className="text-lg font-bold mb-4">Policies</h3>
                     <ul className="space-y-2">
                         <li>
@@ -97,17 +98,17 @@ export default function Footer() {
                 </div>
 
                 {/* Download Now */}
-                <div className="w-full">
+                <div className="ml-24">
                     <h3 className="text-lg font-bold mb-4">Download Now</h3>
-                    <div className="space-y-4">
-                        <a href="/appleStore" className="flex items-center px-5 py-2 bg-linear-primary-500 text-white rounded-lg shadow-lg hover:opacity-90">
+                    <div className="space-y-4 border-white">
+                        <a href="/appleStore" className="flex items-center px-5 py-2 bg-red-500 text-white rounded-lg shadow-lg hover:opacity-90">
                             <FaApple className="w-10 h-10 mr-2" />
                             <div className="text-left">
                                 <p className="text-xs">Download on the</p>
                                 <p className="text-xl font-semibold">App Store</p>
                             </div>
                         </a>
-                        <a href="/appStore" className="flex items-center px-5 py-2 bg-linear-primary-500 text-white rounded-lg shadow-lg hover:opacity-90">
+                        <a href="/appStore" className="flex items-center px-5 py-2 bg-red-500 text-white rounded-lg shadow-lg hover:opacity-90">
                             <FaGooglePlay className="w-10 h-10 mr-2" />
                             <div className="text-left">
                                 <p className="text-xs">Download on the</p>
@@ -119,12 +120,10 @@ export default function Footer() {
             </div>
 
             {/* Divider */}
-            <div className="pt-7">
-                <hr className="border-gray-600" />
-            </div>
+            <hr className="border-gray-600" />
 
             {/* Footer Bottom */}
-            <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 pt-7 pb-6">
+            <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 py-4">
                 <p>© Copyright 2024, All Rights Reserved.</p>
                 <p>Made with ❤️ in India</p>
                 <p>Reg@2024</p>
