@@ -13,7 +13,7 @@ export default function FloatingIcon2({ title, image, description, place, isInVi
       <Image
         src={image}
         alt={title}
-        className="w-32 h-32 p-4 mb-4 flex justify-start" 
+        className="w-32 h-32 p-4  flex justify-start" 
       />
       <h2 className="font-semibold font-lato text-2xl text-left">{title}</h2> 
       <p className="text-lg font-lato text-left">{description}</p> 

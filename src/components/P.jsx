@@ -36,7 +36,7 @@ export default function Testimonials() {
             </motion.h1>
 
             <motion.p
-                className="text-center text-gray-200 mt-5 mb-10 ml-96 mr-96 text-4xl"
+                className="text-center text-gray-200 mt-5 mb-10 ml-64 mr-64 text-4xl"
                 initial={{ opacity: 0 }}
                 animate={isInView ? { opacity: 1 } : { opacity: 0 }}
                 transition={{ delay: 0.5, duration: 1 }}
@@ -68,7 +68,7 @@ export default function Testimonials() {
                     image={global}
                     title="Global Audience Access"
                     description="Helps you gain global audience"
-                    place="absolute -top-10 left-44 ml-28 floating-icon hover:scale-110 justify-end"
+                    place="absolute -top-10 left-44 ml-[30] floating-icon hover:scale-110 justify-end"
                     isInView={isInView}
 
                 />
@@ -76,21 +76,21 @@ export default function Testimonials() {
                     image={personal}
                     title="Personal Brand"
                     description="Helps you gain global audience"
-                    place="absolute -top-10 right-44 mr-28 floating-icon hover:scale-110"
+                    place="absolute -top-10 right-32 mr-[70] floating-icon hover:scale-110"
                     isInView={isInView}
                 />
                 <FloatingIcon1
                     image={revenue}
                     title="Revenue Opportunities"
                     description="Helps you gain global audience"
-                    place="absolute bottom-10 left-44 ml-28 floating-icon hover:scale-110"
+                    place="absolute bottom-10 left-44 ml-[30]  floating-icon hover:scale-110"
                     isInView={isInView}
                 />
                 <FloatingIcon2
                     image={cal}
                     title="Work on Your Own Schedule"
                     description="Helps you gain global audience"
-                    place="absolute bottom-10 right-32 mr-24 floating-icon hover:scale-110"
+                    place="absolute bottom-10 right-32 mr-[15] floating-icon hover:scale-110"
                     isInView={isInView}
                 />
             </div>
