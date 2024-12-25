@@ -4,4 +4,15 @@
 
 
 
+@layer base {
+  html {
+    font-size: 100%; /* Ensure root font size is consistent */
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
 

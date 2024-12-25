@@ -19,7 +19,7 @@ export default function Testimonials() {
 
     return (
         <section
-            className="bg-neutral-900 text-neutral-100 font-lato p-10 text-center"
+            className="bg-neutral-900 text-neutral-100 font-lato p-10 text-center mx-auto"
             ref={ref}
         >
             <motion.h1

@@ -13,6 +13,7 @@ import Header from "../components/Header";
 import { Inter } from 'next/font/google';
 import { Lato } from 'next/font/google';
 
+
 const lato = Lato({
   weight: ['400', '700'],  
   subsets: ['latin'],
