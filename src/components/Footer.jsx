@@ -101,14 +101,14 @@ export default function Footer() {
                 <div className="ml-24">
                     <h3 className="text-lg font-bold mb-4">Download Now</h3>
                     <div className="space-y-4 ">
-                        <a href="/appleStore" className="flex items-center border-2 border-white px-5 py-2 bg-red-500 text-white rounded-lg shadow-lg hover:opacity-90">
+                        <a href="/appleStore" className="flex items-center border-2 border-neutral-100 px-5 py-2 bg-red-500 text-white rounded-lg shadow-lg hover:opacity-90">
                             <FaApple className="w-10 h-10 mr-2" />
                             <div className="text-left">
                                 <p className="text-xs">Download on the</p>
                                 <p className="text-xl font-semibold">App Store</p>
                             </div>
                         </a>
-                        <a href="/appStore" className="flex items-center px-5 py-2 border-2 border-white bg-red-500 text-white rounded-lg shadow-lg hover:opacity-90">
+                        <a href="/appStore" className="flex items-center px-5 py-2 border-2 border-neutral-100 bg-red-500 text-white rounded-lg shadow-lg hover:opacity-90">
                             <FaGooglePlay className="w-10 h-10 mr-2" />
                             <div className="text-left">
                                 <p className="text-xs">Download on the</p>

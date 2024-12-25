@@ -55,14 +55,14 @@ export default function Join() {
 
   return (
     <div ref={ref} className="text-center bg-neutral-900 text-neutral-100 font-lato py-10">
-      <div className="justify items-center mt-20 ml-72 mr-72">
-        <h1 className="font-semibold font-lato text-6xl">
+      <div className=" mt-20 ml-72 mr-72">
+        <h1 className=" justify items-center font-semibold font-lato text-5xl">
           Join growing community of Coaches
         </h1>
 
         {/* Typing animation, starts only when in view */}
         <div
-          className="mt-12  font-lato text-[32px] text-neutral-300 w-[1031px] leading-[38.4px]"
+          className="mt-12   font-lato text-[32px] text-neutral-300 w-[1031px] leading-[38.4px]"
           style={{ height: "240px" }} // Fixed height for alignment
         >
           {startAnimation && <TypewriterAnimation text={fullText} />}

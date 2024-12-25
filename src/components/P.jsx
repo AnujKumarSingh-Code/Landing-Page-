@@ -76,7 +76,7 @@ export default function Testimonials() {
                     image={personal}
                     title="Personal Brand"
                     description="Helps you gain global audience"
-                    place="absolute -top-10 right-32 mr-[70] floating-icon hover:scale-110"
+                    place="absolute -top-10 right-32 mr-[100] floating-icon hover:scale-110"
                     isInView={isInView}
                 />
                 <FloatingIcon1
