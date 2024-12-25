@@ -42,23 +42,24 @@ const FeatureCard = ({ title, description, icon }) => {
 };
 
 const FeaturesSection = () => {
-  return (
-    <section className="bg-neutral-900 py-16">
-      <h2 className="text-center text-6xl font-bold text-neutral-100 font-lato mb-12  ">
-        Key Features
-      </h2>
-      <div className="flex justify-center font-lato items-center gap-12 flex-wrap mt-28">
-        {features.map((feature, index) => (
-          <FeatureCard
-            key={index}
-            title={feature.title}
-            description={feature.description}
-            icon={feature.icon}
-          />
-        ))}
-      </div>
-    </section>
-  );
-};
+    return (
+      <section className="bg-neutral-900 py-16 px-4">
+        <h2 className="text-center text-4xl md:text-6xl font-bold text-neutral-100 mb-12">
+          Key Features
+        </h2>
+        <div className="flex flex-wrap justify-center items-center gap-8">
+          {features.map((feature, index) => (
+            <FeatureCard
+              key={index}
+              title={feature.title}
+              description={feature.description}
+              icon={feature.icon}
+            />
+          ))}
+        </div>
+      </section>
+    );
+  };
+  
 
 export default FeaturesSection;
