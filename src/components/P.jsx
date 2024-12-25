@@ -58,7 +58,7 @@ export default function Testimonials() {
                 <MotionImage
                     src={ip3}
                     alt="mobile"
-                    className="absolute ml-24 translate-x-11 translate-y-[-1px] w-70 h-70 hover:opacity-80 "
+                    className="absolute ml-24 top-[-100] w-70 h-70 hover:opacity-80 "
                     initial={{ scale: 0.8, opacity: 0 }}
                     animate={isInView ? { scale: 1, opacity: 1 } : { scale: 0.8, opacity: 0 }}
                     transition={{ duration: 1 }}
@@ -76,7 +76,7 @@ export default function Testimonials() {
                     image={personal}
                     title="Personal Brand"
                     description="Helps you gain global audience"
-                    place="absolute -top-10 right-32 mr-[100] floating-icon hover:scale-110"
+                    place="absolute top-[-40] right-52 floating-icon hover:scale-110"
                     isInView={isInView}
                 />
                 <FloatingIcon1

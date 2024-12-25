@@ -52,7 +52,7 @@ const FeatureCard = ({ title, description, icon }) => {
 const FeaturesSection = () => {
   return (
     <section className="bg-neutral-900 py-16 px-4">
-      <h2 className="text-center text-3xl sm:text-4xl md:text-6xl font-bold text-neutral-100 mb-12">
+      <h2 className="text-center text-3xl  sm:text-4xl md:text-6xl font-bold text-neutral-100 mb-24">
         Key Features
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-center items-center pl-[72px] pr-[72px]">
