@@ -30,13 +30,13 @@ const features = [
 
 const FeatureCard = ({ title, description, icon }) => {
   return (
-    <div className="relative flex flex-col justify-center items-center font-lato bg-[#262626] text-neutral-100 p-6 rounded-[16px]  w-[300px] h-[300px] ">
+    <div className="relative flex flex-col justify-center items-center font-lato bg-[#262626] text-neutral-100 p-6 rounded-[16px] w-full sm:w-[348px] h-[320px]">
       {/* Circular Image Container */}
       <div className="absolute -top-10 flex items-center justify-center">
         <Image
           src={icon}
           alt={title}
-          className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] object-contain flex justify-center"
+          className="w-[80px] h-[80px] sm:w-[130px] sm:h-[130px] object-contain flex justify-center"
         />
       </div>
       <h3 className="text-neutral-300 text-[20px] sm:text-[29px] font-lato w-[260px] font-bold flex justify-center mt-20 sm:mt-0">
@@ -52,18 +52,20 @@ const FeatureCard = ({ title, description, icon }) => {
 const FeaturesSection = () => {
   return (
     <section className="bg-neutral-900 py-16 px-4">
-      <h2 className="text-center text-3xl sm:text-4xl md:text-6xl font-bold text-neutral-100 mb-12">
-        Key Features
-      </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-center items-center pl-[72px] pr-[72px]">
-        {features.map((feature, index) => (
-          <FeatureCard
-            key={index}
-            title={feature.title}
-            description={feature.description}
-            icon={feature.icon}
-          />
-        ))}
+      <div className="container mx-auto px-4">
+        <h2 className="text-center text-3xl sm:text-4xl md:text-6xl font-bold text-neutral-100 mb-12">
+          Key Features
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-center items-center">
+          {features.map((feature, index) => (
+            <FeatureCard
+              key={index}
+              title={feature.title}
+              description={feature.description}
+              icon={feature.icon}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
