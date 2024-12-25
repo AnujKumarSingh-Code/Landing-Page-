@@ -100,7 +100,7 @@ export default function Footer() {
                 
                 <div>
                     <h3 className="text-lg font-bold mb-4">Download Now</h3>
-                    <div className=" space-y-4 pr-[72px]">
+                    <div className=" space-y-4 ">
                         <button
                             href="/appleStore"
                             className=" flex items-center w-52 px-5 py-2 bg-linear-primary-500 text-white rounded-lg shadow-lg hover:opacity-90   text-center "
