@@ -7,7 +7,7 @@ export default function Footer() {
 
     return (
         <footer className=" text-neutral-300 font-lato bg-[#2d1a17] pl-[72px] pr-[72px]">
-            <div className="pt-[25.35px]  grid grid-cols-1 md:grid-cols-4 gap-[170]">
+            <div className="pt-[25.35px]  grid grid-cols-1 md:grid-cols-4 gap-[200]">
 
                 <div className="w-[285px]">
                     <div className="flex items-center mb-4">

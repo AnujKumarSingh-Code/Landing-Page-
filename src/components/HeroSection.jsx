@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const HeroSection = () => {
   return (
-    <section className="flex items-center justify-center bg-neutral-900 text-neutral-100 font-lato  p-10 text-center ">
+    <section className="bg-neutral-900 text-neutral-100 font-lato  p-10 text-center ">
       <h1 className="text-6xl font-semibold mb-4 font-lato mt-14">
         Become <span className="text-6xl font-bold text-gradient bg-gradient-to-r from-pink-500 via-red-500 to-orange-500 text-transparent bg-clip-text">Coach</span> Today
       </h1>
@@ -15,17 +15,17 @@ const HeroSection = () => {
         <Image
           src={ip4}
           alt="ip4"
-          className="absolute animate-move-up-down transform rotate-[-8deg] left-[450px] rounded-lg"
+          className="absolute animate-move-up-down transform rotate-[-8deg] left-[350px] rounded-lg"
         />
 
         <Image
           src={ip2}
           alt="ip2"
-          className="absolute animate-move-up-down transform rotate-[8deg] left-[600px] rounded-lg"
+          className="absolute animate-move-up-down transform rotate-[8deg] left-[550px] rounded-lg"
         />
       </div>
 
-      <div className="flex items-center justify-center gap-10 mb-10">
+      <div className="flex items-center justify-center gap-10 mb-8">
         <button
           className="flex hover:scale-110 items-center w-52 px-5 py-2 bg-linear-primary-500 text-neutral-100 rounded-lg shadow-lg hover:opacity-90"
         >
