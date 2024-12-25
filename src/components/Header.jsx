@@ -67,7 +67,7 @@ const Header = () => {
     <header className="text-center bg-neutral-900 text-neutral-100 py-10 font-lato">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[400]">
         <div className="w-[750px]">
-          <div className="inline-flex  items-left gap-3 mt-40">
+          <div className="inline-flex ml-[-50] items-left gap-3 mt-40">
             <Image src={smile} alt="Smile Icon " className="h-[60px] w-[60px] mt-6" />
             <TypewriterEffectSmooth
               words={[{ text: "Hey, Awesome Coach", className: "" }]}
