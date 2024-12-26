@@ -1,13 +1,7 @@
 'use client';
 import React from "react";
-import mobile from "../assets/iphone.png";
 import smile from "../assets/smile.png";
 import { FaApple, FaGooglePlay } from "react-icons/fa";
-import circle from "../assets/circle.png";
-import heart from "../assets/heart.png";
-import heartIcon from "../assets/heartIcon.png";
-import man from "../assets/man.png";
-import walk from "../assets/walk.png";
 import A from "../assets/A.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -107,7 +101,7 @@ const Header = () => {
         </div>
 
         <div className="relative mt-40">
-          <Image src={A} alt="A" className="w-[485px] h-[700px] mt-[-100px] " />
+          <Image src={A} alt="A" className="w-[485px] h-[700px] mt-[-100px] ml-[100px] " />
         </div>
       </div>
     </header>
