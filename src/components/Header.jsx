@@ -12,30 +12,26 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const TypewriterEffectSmooth = ({ words, className, cursorClassName }) => {
-  const wordsArray = words.map((word) => {
-    return {
-      ...word,
-      text: word.text.split(""),
-    };
-  });
-  const renderWords = () => {
-    return (
-      <div>
-        {wordsArray.map((word, idx) => (
-          <div key={`word-${idx}`} className="inline-block">
-            {word.text.map((char, index) => (
-              <span
-                key={`char-${index}`}
-                className={`dark:text-neutral-100 font-lato text-neutral-900 ${word.className}`}
-              >
-                {char}
-              </span>
-            ))}
-          </div>
-        ))}
-      </div>
-    );
-  };
+  const wordsArray = words.map((word) => ({
+    ...word,
+    text: word.text.split(""),
+  }));
+  const renderWords = () => (
+    <div>
+      {wordsArray.map((word, idx) => (
+        <div key={`word-${idx}`} className="inline-block">
+          {word.text.map((char, index) => (
+            <span
+              key={`char-${index}`}
+              className={`dark:text-neutral-100 font-lato text-neutral-900 ${word.className}`}
+            >
+              {char}
+            </span>
+          ))}
+        </div>
+      ))}
+    </div>
+  );
 
   return (
     <div className={`flex space-x-1 my-6 ${className}`}>
@@ -49,7 +45,7 @@ const TypewriterEffectSmooth = ({ words, className, cursorClassName }) => {
           className="text-5xl font-bold italic"
           style={{ whiteSpace: "nowrap" }}
         >
-          {renderWords()} {" "}
+          {renderWords()}{" "}
         </div>{" "}
       </motion.div>
       <motion.span
@@ -68,13 +64,13 @@ const Header = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[400]">
         <div className="w-[750px]">
           <div className="inline-flex ml-[-90] items-left gap-3 mt-40">
-            <Image src={smile} alt="Smile Icon " className=" justify-end h-[60px] w-[60px] mt-6" />
+            <Image src={smile} alt="Smile Icon " className="justify-end h-[60px] w-[60px] mt-6" />
             <TypewriterEffectSmooth
               words={[{ text: "Hey, Awesome Coach", className: "" }]}
             />
           </div>
 
-          <div className="mt-10  ml-[72px] align-baseline text-left">
+          <div className="mt-10 ml-[72px] align-baseline text-left">
             <p className="text-3xl font-semibold inline-flex">
               Expand Your Reach, Inspire More
             </p>
@@ -86,7 +82,7 @@ const Header = () => {
             </p>
           </div>
 
-          <div className="text-2xl  ml-[72px] text-left mt-10">
+          <div className="text-2xl ml-[72px] mr-10 text-left mt-10">
             <p>A global platform for coaches to connect, inspire, and change lives.</p>
           </div>
 
@@ -109,35 +105,33 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="mt-40">
-          <div className="relative w-90 h-90 mr-20">
-            <Image src={circle} alt="circle" className="w-90 h-90 " />
-            <Image
-              src={mobile}
-              alt="mobile"
-              className="absolute top-1/2 left-72 transform -translate-x-1/2 -translate-y-1/2 w-70 h-70"
-            />
-            <div className="absolute top-[-70] right-[350]">
-              <Image src={heart} alt="heart" className="w-28 h-28 p-2" />
-            </div>
-            <div className="absolute top-[-20] right-[40]">
-              <Image src={man} alt="man" className="w-28 h-28 p-2 rounded-full" />
-            </div>
-            <div className="absolute bottom-36 right-[350]">
-              <Image
-                src={heartIcon}
-                alt="heartIcon"
-                className="w-28 h-28 p-2 rounded-full"
-              />
-            </div>
-            <div className="absolute bottom-10 right-[40]">
-              <Image
-                src={walk}
-                alt="walk"
-                className="w-28 h-28 p-2 rounded-full"
-              />
-            </div>
-          </div>
+        <div className="relative mt-40">
+          <Image src={circle} alt="circle" className="absolute w-[450px] h-[450px]" />
+          <Image
+            src={mobile}
+            alt="mobile"
+            className="absolute top-[50%] left-[50%] transform -translate-x-[55%] -translate-y-[40%] w-[400px] h-[700px]"
+          />
+          <Image
+            src={heart}
+            alt="heart"
+            className="absolute top-[20%] right-[30%] w-[80px] h-[80px]"
+          />
+          <Image
+            src={man}
+            alt="man"
+            className="absolute top-[5%] left-[8%] w-[80px] h-[80px] rounded-full"
+          />
+          <Image
+            src={heartIcon}
+            alt="heartIcon"
+            className="absolute bottom-[0%] right-[30%] w-[80px] h-[80px]"
+          />
+          <Image
+            src={walk}
+            alt="walk"
+            className="absolute bottom-[15%] left-[8%] w-[80px] h-[80px]"
+          />
         </div>
       </div>
     </header>
