@@ -49,7 +49,7 @@ export default function Testimonials() {
                 FitnEarnPal empowers coaches to grow and reach a global audience while providing valuable health and fitness insights to users.
             </motion.p>
 
-            <Image src={B} alt="B" />
+            <Image src={B} alt="B" className="flex justify-center" />
         </section>
     );
 }
