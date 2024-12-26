@@ -8,6 +8,7 @@ import heart from "../assets/heart.png";
 import heartIcon from "../assets/heartIcon.png";
 import man from "../assets/man.png";
 import walk from "../assets/walk.png";
+import A from "../assets/A.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -60,9 +61,9 @@ const TypewriterEffectSmooth = ({ words, className, cursorClassName }) => {
 
 const Header = () => {
   return (
-    <header className="text-center bg-neutral-900 text-neutral-100 py-10 font-lato">
+    <header className="text-center bg-neutral-900 text-neutral-100  font-lato">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[400]">
-        <div className="w-[750px]">
+        <div className="w-[750px] py-10">
           <div className="inline-flex ml-[-90] items-left gap-3 mt-40">
             <Image src={smile} alt="Smile Icon " className="justify-end h-[60px] w-[60px] mt-6" />
             <TypewriterEffectSmooth
@@ -106,32 +107,7 @@ const Header = () => {
         </div>
 
         <div className="relative mt-40">
-          <Image src={circle} alt="circle" className="absolute w-[450px] h-[450px]" />
-          <Image
-            src={mobile}
-            alt="mobile"
-            className="absolute top-[50%] left-[50%] transform -translate-x-[55%] -translate-y-[40%] w-[400px] h-[700px]"
-          />
-          <Image
-            src={heart}
-            alt="heart"
-            className="absolute top-[20%] right-[30%] w-[80px] h-[80px]"
-          />
-          <Image
-            src={man}
-            alt="man"
-            className="absolute top-[5%] left-[8%] w-[80px] h-[80px] rounded-full"
-          />
-          <Image
-            src={heartIcon}
-            alt="heartIcon"
-            className="absolute bottom-[0%] right-[30%] w-[80px] h-[80px]"
-          />
-          <Image
-            src={walk}
-            alt="walk"
-            className="absolute bottom-[15%] left-[8%] w-[80px] h-[80px]"
-          />
+          <Image src={A} alt="A" className="w-[485px] h-[700px] mt-[-100px] " />
         </div>
       </div>
     </header>
