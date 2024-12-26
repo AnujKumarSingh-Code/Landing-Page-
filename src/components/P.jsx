@@ -61,7 +61,7 @@ export default function Testimonials() {
                 <Image
                     src={B}
                     alt="B"
-                    className="w-[700px] lg:w-[900px] xl:w-[900px] h-auto"
+                    className="w-[800px] lg:w-[1000px] xl:w-[1000px] h-auto"
                 />
             </motion.div>
         </section>
