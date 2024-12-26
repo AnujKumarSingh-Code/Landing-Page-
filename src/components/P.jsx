@@ -1,7 +1,7 @@
 'use client';
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import B from "../assets/B.png"
+import B from "../assets/B.png";
 import Image from 'next/image';
 
 const MotionImage = motion(Image);
@@ -28,6 +28,7 @@ export default function Testimonials() {
             className="bg-neutral-900 text-neutral-100 font-lato p-10 text-center mx-auto relative"
             ref={ref}
         >
+            {/* Animated Header */}
             <motion.h1
                 className="text-center text-4xl lg:text-6xl font-semibold mt-14"
                 initial={{ opacity: 0, y: -50 }}
@@ -40,6 +41,7 @@ export default function Testimonials() {
                 </span>
             </motion.h1>
 
+            {/* Animated Subtitle */}
             <motion.p
                 className="text-center text-gray-200 mt-5 mb-10 max-w-4xl mx-auto text-lg lg:text-4xl"
                 initial={{ opacity: 0 }}
@@ -49,7 +51,19 @@ export default function Testimonials() {
                 FitnEarnPal empowers coaches to grow and reach a global audience while providing valuable health and fitness insights to users.
             </motion.p>
 
-            <Image src={B} alt="B" className="flex justify-center" />
+            {/* Animated Image B Center-Aligned */}
+            <motion.div
+                className="flex justify-center mt-10"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+                transition={{ delay: 1, duration: 1 }}
+            >
+                <Image
+                    src={B}
+                    alt="B"
+                    className="w-[700px] lg:w-[900px] xl:w-[900px] h-auto"
+                />
+            </motion.div>
         </section>
     );
 }
