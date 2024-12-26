@@ -6,6 +6,12 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: [
+    "ml-[-70]",
+    "mt-[-100px]",
+    "gap-[400]", // Add all custom classes you use
+    "ml-[-90]"
+  ],
   theme: {
     extend: {
       

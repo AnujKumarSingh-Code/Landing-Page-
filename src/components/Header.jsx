@@ -101,7 +101,7 @@ const Header = () => {
         </div>
 
         <div className="relative mt-40">
-          <Image src={A} alt="A" className="w-[485px] h-[700px] mt-[-100px] ml-[100px] " />
+          <Image src={A} alt="A" className="w-[485px] h-[700px] mt-[-100px]  " />
         </div>
       </div>
     </header>
