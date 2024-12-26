@@ -1,12 +1,7 @@
 'use client';
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import ip3 from '../assets/ip3.png';
-import circle from '../assets/circle.png';
-import global from '../assets/global.png';
-import personal from '../assets/personal.png';
-import revenue from '../assets/revenue.png';
-import cal from '../assets/cal.png';
+import B from "../assets/B.png"
 import Image from 'next/image';
 
 const MotionImage = motion(Image);
@@ -54,63 +49,7 @@ export default function Testimonials() {
                 FitnEarnPal empowers coaches to grow and reach a global audience while providing valuable health and fitness insights to users.
             </motion.p>
 
-            {/* Grid Layout */}
-            <div className="relative grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-7xl mx-auto items-center mt-16">
-                {/* Left Column */}
-                <div className="flex flex-col space-y-10">
-                    <FloatingIcon
-                        image={global}
-                        title="Global Audience Access"
-                        description="Helps you gain global audience"
-                        isInView={isInView}
-                    />
-                    <FloatingIcon
-                        image={personal}
-                        title="Personal Brand"
-                        description="Helps you gain global audience"
-                        isInView={isInView}
-                    />
-                </div>
-
-                {/* Middle Column */}
-                <div className="relative flex justify-center items-center">
-                    {/* Circle */}
-                    <MotionImage
-                        src={circle}
-                        alt="circle"
-                        className="w-64 h-64 lg:w-[400px] lg:h-[400px] absolute"
-                        initial={{ scale: 0 }}
-                        animate={isInView ? { scale: 1 } : { scale: 0 }}
-                        transition={{ duration: 1.5 }}
-                    />
-                    {/* Mobile Image */}
-                    <MotionImage
-                        src={ip3}
-                        alt="mobile"
-                        className="flex flex-col w-64 lg:w-[350px] justify-end"
-                        initial={{ scale: 0.8, opacity: 1 }}
-                        animate={isInView ? { scale: 1, opacity: 1 } : { scale: 1, opacity: 1 }}
-                        transition={{ duration: 1 }}
-                    />
-                </div>
-
-                {/* Right Column */}
-                <div className="flex flex-col space-y-10">
-                    <FloatingIcon
-                        image={revenue}
-                        title="Revenue Opportunities"
-                        description="Helps you gain global audience"
-                        isInView={isInView}
-                    />
-                    <FloatingIcon
-                        image={cal}
-                        title="Work on Your Own Schedule"
-                        description="Helps you gain global audience"
-                        isInView={isInView}
-                    />
-                </div>
-            </div>
+            <Image src={B} alt="B" />
         </section>
     );
 }
-                
