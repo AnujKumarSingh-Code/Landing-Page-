@@ -100,7 +100,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="relative mt-40 ml-56 ">
+        <div className="relative mt-40 ml-48 ">
           <Image src={A} alt="A" className=" w-[550px] h-[800px] mt-[-100px]  " />
         </div>
       </div>
